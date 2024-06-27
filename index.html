@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poject-2</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+</head>
+<body>
+<!-- question-1 -->
+<section>
+    <div class="p-6  ">
+        <h1 class="font-semibold">Question-1</h1>
+        <p> Write a program canVote that takes an age as an input and returns a message indicating whether the person is eligible to vote. In most countries, the legal voting age is 18.
+        </p>
+        <div class="flex pt-2">
+        <div id="input">
+            <i class="fa-solid fa-user" style="color: cadetblue"></i>
+            <input type="number" id="age"  placeholder="Enter your age" class="border-b border-black outline-0" required>
+            <button onclick="btn()" id="btn"  class=" bg-slate-400 border p-2 rounded-md">Check</button>
+        </div>
+        </div>
+    </div>
+</section>
+
+<!-- question-2 -->
+<section>
+    <div class="p-6  ">
+        <h1 class="font-semibold">Question-2</h1>
+        <p>  Write a program maxOfTwo that takes two numbers as input and returns the larger number. If the numbers are equal, return either one.</p>
+        <div class="flex pt-2">
+        <div>
+           <label for="">Number1: </label>
+           <input type="number" id="num1"  placeholder="Enter" class="border-b border-black outline-0 w-[15%]" required>
+           <label for="">Number2: </label>
+            <input type="number" id="num2"  placeholder="Enter" class="border-b border-black outline-0 w-[15%]" required>
+            =<button ondblclick="findMax()"  type="submit" class=" bg-slate-400 border p-2 rounded-md"id="find">Find Value</button>
+        </div>
+        </div>
+    </div>
+</section>
+
+<!-- question-3 -->
+ <section>
+    <div class="p-6  ">
+        <h1 class="font-semibold">Question-3</h1>
+        <p>Write a program isEvenOrOdd that takes a number as an input and returns a message indicating whether the number is even or odd.
+        </p>
+
+            <form id="numberForm">
+                <label>
+                    <input type="radio" name="number" value="1"> 1
+                </label>
+                <label>
+                    <input type="radio" name="number" value="2"> 2
+                </label>
+                <label>
+                    <input type="radio" name="number" value="3"> 3
+                </label>
+                <label>
+                    <input type="radio" name="number" value="4"> 4
+                </label>
+                <label>
+                    <input type="radio" name="number" value="5"> 5
+                </label>
+                <button type="button" onclick="checkNumber()"  class=" bg-slate-400 border p-2 rounded-md">Check Box</button>
+            </form>
+            <p id="result"></p>
+
+    </div>
+ </section>
+
+ <!-- question-4 -->
+  <section>
+    <div class="p-6  ">
+        <h1 class="font-semibold">Question-4</h1>
+        <p>Write a program  getGrade that takes a score (between 0 and 100) as an input and returns the corresponding grade based on the following criteria:
+            90-100: A
+            80-89: B
+            70-79: C
+            60-69: D
+            0-59: F
+        </p>
+    <form action="">
+        <label for="score">Enter your marks (0-100): </label>
+        <input type="number" id="score" min="0" max="100" placeholder="Enter a score" class="border-b border-black outline-0 w-36">
+        <button onclick="getGrade()"  class=" bg-slate-400 border p-2 rounded-md">Get Grade</button>
+    </form>
+        <h3 id="result"> </h3>
+
+    </div>
+  </section>
+
+  <!-- question-5 -->
+  <section>
+    <div class="p-6  ">
+        <h1 class="font-semibold">Question-5</h1>
+        <p>  Write a function greet that takes a name as an argument and returns a greeting message with that name.</p>
+       <input type="text" id="name"  placeholder="Enter your name" class="border-b border-black outline-0">
+       <button onclick="greet()" class=" bg-slate-400 border p-2 rounded-md">Greet</button>
+       <h2 id="result"> </h2>
+
+  </div>
+  </section>
+  <!-- question-6 -->
+  <section>
+    <div class="p-6  ">
+        <h1 class="font-semibold">Question-6</h1>
+        <p>  Write a function square that takes a number as an argument and returns the square of that number.</p>
+       <input type="number" id="sq"  placeholder="Enter a digit" class="border-b border-black outline-0">
+       <button onclick="square()" class=" bg-slate-400 border p-2 rounded-md">Square</button>
+       <h2 id="result"></h2>
+  </div>
+  </section>
+  <!-- question-7 -->
+  <section>
+    <div class="p-6  ">
+        <h1 class="font-semibold">Question-7</h1>
+        <p>  Write a function celsiusToFahrenheit that takes a temperature in Celsius as an argument and returns the temperature converted to Fahrenheit. The formula to convert Celsius to Fahrenheit is F = C * 9/5 + 32.
+        </p>
+       <input type="number" id="cel"  placeholder="Enter Celsius Temp." class="border-b border-black outline-0">
+       <button onclick="celsiusToFahrenheit()"  class=" bg-slate-400 border p-2 rounded-md">Convert </button>
+       <h4 id="result"></h4>
+  </div>
+  </section>
+  <!-- question-8 -->
+  <section>
+    <div class="p-6  ">
+        <h1 class="font-semibold">Question-8</h1>
+        <p>  Write a function isPositive that takes a number as an argument and returns true if the number is positive, and false otherwise.
+        </p>
+       <button id="checkNumber" class=" bg-slate-400 border p-2 rounded-md">Check Number</button>
+       
+       <!-- <button id="checkNumber" class=" bg-slate-400 border p-2 rounded-md">Check Number</button> -->
+
+  </div>
+  </section>
+<!-- question-9 -->
+  <section>
+    <div class="p-6  ">
+        <h1 class="font-semibold">Question-9</h1>
+        <p> Make an object of patient data.</p>
+       
+
+  </div>
+  </section>
+
+<!-- question-10 -->
+  <section>
+    <div class="p-6  ">
+        <h1 class="font-semibold">Question-10</h1>
+        <p>  Make an object of a student.</p>
+       
+
+  </div>
+  </section>
+
+</body>
+<script src="/index.js"></script>
+</html>
+
